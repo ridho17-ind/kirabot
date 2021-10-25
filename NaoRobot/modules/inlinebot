@@ -48,10 +48,10 @@ class AioHttp:
 
 __mod_name__ = "ɪɴʟɪɴᴇ​"
 __help__ = """
-INLINE BOT SERVICE OF Kennedy robot
+INLINE BOT SERVICE OF Roger robot
 I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.
 ──「 Syntax 」──
-   Kennedy robot [command] [query]
+   Roger robot [command] [query]
 ──「 Commands Available 」──
 ➩ alive - Check Bot's Stats.
 ➩ yt [query] - Youtube Search.
@@ -92,9 +92,9 @@ I'm more efficient when added as group admin. By the way these commands can be u
 __MODULE__ = "Inline​"
 __HELP__ = """
  ==>> **INLINE BOT SERVICE** <<==
-`I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.`
+`I'm more efficient when added as group admin. By the way these commands can be used by Roger in a group via inline.`
    >> Syntax <<
-Kennedy robot [command] [query]
+Roger robot [command] [query]
    >> Commands Available <<
 - **alive** - __Check Bot's Stats.__
 - **yt [query]** - __Youtube Search.__
@@ -615,7 +615,7 @@ async def inline_query_handler(client, query):
                 Time Zones:- {tom}
                 Top Level Domain:- {lanester}
                 wikipedia:- {wiki}</b>
-                Gathered By Kennedy.</b>
+                Gathered By Xbarok.</b>
                 """
             results.append(
                 InlineQueryResultArticle(
@@ -881,7 +881,7 @@ async def inline_query_handler(client, query):
                 + app_link
                 + "'>View in Play Store</a>"
             )
-            app_details += "\n\n===> @KennedyXRobot <==="
+            app_details += "\n\n===> @RogerexRobot <==="
             rip.append(
                 InlineQueryResultArticle(
                     title=f"Datails of {app_name}",
