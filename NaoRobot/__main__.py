@@ -74,36 +74,36 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[✨](https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg) ʜᴇʟʟᴏ  ᴍʏ ɴᴀᴍᴇ ɪs ɴᴀᴏ ᴛᴏᴍᴏʀɪ
-ɪ'ᴍ ᴀ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇ ʙᴏᴛ ꜰᴏʀ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ!
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ @skyzuX ❤️​!   
+[☠️](https://telegra.ph/file/b3b8a4ba4a9d54ac9275c.jpg) 'Hai there i'm' [RogerexRobot](https://t.me/RogerexRobot)
+────────────────────
+Roger a powerful group management bot built to help you manage your group!
+────────────────────
+Hit the /help or tap on button to se available command on me.
 """
 
 buttons = [
-    [
+        [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{BOT_USERNAME}?startgroup=true"),
+            text="➕️ Add Roger to tour group ➕️", url="t.me/RogerexRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="nao_"),
+        InlineKeyboardButton(text="About", callback_data="Nao_"),
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="Basic help", callback_data="Nao_basichelp"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="Help & Commands❔", callback_data="help_back"),
     ],
 ]
 
-
 HELP_STRINGS = """
-ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ."""
-
-nao_IMG = "https://telegra.ph/file/9c6e5b30022565cbe9f4a.jpg"
+Click on the button bellow to get description about specifics command ××
+"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @skyzuX \
- Supporting isnt always financial! \
+ You can support the project [X•BaroX](t.me/Xbarok) \
+ Supporting isnt always financial! [Roger update](t.me/RogerUpdate) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -189,7 +189,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="🔙 BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
                     ),
                 )
 
@@ -214,22 +214,12 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>I'm started already!</b>\n<b>Haven't slept since:</b> <code>{uptime}</code>",
-                        reply_markup=InlineKeyboardMarkup(
-                            [
-                                {
-                                    InlineKeyboardButton(
-                                        text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ​",
-                                        url="https://t.me/skyzusupport",
-                                    )
-                                }
-                            ]
-                        ),
-                        parse_mode=ParseMode.HTML,
-                        disable_web_page_preview=True
-                    )
-
-
+            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+                uptime
+            ),
+            parse_mode=ParseMode.HTML,
+        )
+        
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
     # Log the error before we do anything else, so we can see it even if something breaks.
@@ -354,35 +344,32 @@ def help_button(update, context):
 
 
 @run_async
-def nao_about_callback(update, context):
+def Nao_about_callback(update, context):
     query = update.callback_query
-    if query.data == "nao_":
+    if query.data == "Nao_":
         query.message.edit_text(
-            text=""" 💡 I'm *NaoRobot*, a powerful group management bot built to help you manage your group easily.
-                 \n• I can restrict users.
-                 \n• I can greet users with customizable welcome messages and even set a group's rules.
-                 \n• I have an advanced anti-flood system.
-                 \n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n• I check for admins' permissions before executing any command and more stuffs
-                 \n\n_naorobot's licensed under the GNU General Public License v3.0_
-                 \n\nIf you have any question about NaoRobot, let us know at .""",
+            text=""" ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ
+            \nHere's the basic help regarding use of Roger.
+            
+            \nAlmost all modules usage defined in the help menu, checkout by sending `/help`
+            \nReport error/bugs click the Button""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="Source", url="https://github.com/Askarbot/NaoRobot"
-                    ),
-                    InlineKeyboardButton(text="Dev", url="https://t.mr/skyzuX")
-                 ],
-                 [
-                    InlineKeyboardButton(text="🔙 Back", callback_data="nao_back")
-                 ]
+                    [
+                        InlineKeyboardButton(
+                            text="Support", url="t.me/RogerexSupport"
+                        ),
+                        InlineKeyboardButton(
+                            text="Source code", url="https://github.com/Xbaroxx"
+                        ),
+                    ],
+                    [InlineKeyboardButton(text="Back", callback_data="Nao_back")],
                 ]
             ),
         )
-    elif query.data == "nao_back":
+    elif query.data == "Nao_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -391,20 +378,117 @@ def nao_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
+    elif query.data == "Nao_basichelp":
+        query.message.edit_text(
+            text=f"*Here's basic Help regarding* *How to use Me?*"
+            f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
+            f"\n• After adding promote me manually with full rights for faster experience.\n"
+            f"\n• Than send `/admincache@RogerexRobot` in that chat to refresh admin list in My database.\n"
+            f"\n\n*All done now use below given button's to know about use!*\n"
+            f"",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Admins", callback_data="Nao_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="Nao_notes"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Support", callback_data="Nao_support"),
+                    InlineKeyboardButton(text="Credits", callback_data="Nao_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="Nao_back"),
+                 
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "Nao_admin":
+        query.message.edit_text(
+            text=f"*Let's make your group bit effective now*"
+            f"\nCongragulations, ROGER now ready to manage your group."
+            f"\n\n*Admin Tools*"
+            f"\nBasic Admin tools help you to protect and powerup your group."
+            f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
+            f"\n\n*Welcome*"
+            f"\nLets set a welcome message to welcome new users coming to your group."
+            f"send `/setwelcome [message]` to set a welcome message!",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Back", callback_data="Nao_basichelp")]]
+            ),
+        )
+
+    elif query.data == "Nao_notes":
+        query.message.edit_text(
+            text=f"<b> Setting up notes</b>"
+            f"\nYou can save message/media/audio or anything as notes"
+            f"\nto get a note simply use # at the beginning of a word"
+            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Back", callback_data="Nao_basichelp")]]
+            ),
+        )
+    elif query.data == "Nao_support":
+        query.message.edit_text(
+            text="* Roger support chats*"
+            "\nJoin Support Group/Channel",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Log's", url="t.me/joinlogsk"),
+                    InlineKeyboardButton(text="Fed's", url="t.me/RogerexSupport"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Support", url="t.me/RogerexSupport"),
+                    InlineKeyboardButton(text="Update", url="https://t.me/RogerUpdate"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="Nao_basichelp"),
+                 
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "Nao_credit":
+        query.message.edit_text(
+            text=f"<b> CREDIT FOR ROGER DEV'S</b>\n"
+            f"\nHere Some Developers Helping in Making The Roger Bot",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="ㄨ•日人尺口ㄨ", url="t.me/Xbarok"
+                        ),
+                        InlineKeyboardButton(
+                            text="之王ㄧㄇ之口", url="t.me/tdrki_1"
+                        ),
+                    ],
+                    [InlineKeyboardButton(text="Back", callback_data="Nao_back")],
+                ]
+            ),
+        )
+
 
 @run_async
 def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi I'm *NaoRobot*
-                 \nHere is the [Source Code](https://github.com/KennedyProject/NaoRobot) .""",
+            text=""" Hi.. there I'm *Roger*
+                 \nHere is the [Source Code](https://github.com/Xbaroxx) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🔙 Back", callback_data="source_back")
+                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
                  ]
                 ]
             ),
@@ -449,10 +533,16 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="Hᴇʟᴘ ❔",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
-                    ]
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ",
+                            url="https://t.me/{}".format(SUPPORT_CHAT),
+                        )
+                    ],
                 ]
             ),
         )
@@ -470,7 +560,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
             ),
         )
 
@@ -543,7 +633,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="🔙 Back",
+                                text="Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -645,7 +735,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1947924017 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -693,7 +783,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yoss I'm alive ")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
@@ -710,9 +800,8 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(nao_about_callback, pattern=r"nao_")
+    about_callback_handler = CallbackQueryHandler(Nao_about_callback, pattern=r"Nao_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
-
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
