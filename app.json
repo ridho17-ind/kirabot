@@ -1,15 +1,15 @@
 {
-      "name": "NaoRobot",
+      "name": "RogerRobot",
       "description": "Theme anime Telegram group management bot.",
-      "logo": "https://telegra.ph/file/84ab5c1a58b87f23054eb.jpg",
+      "logo": "https://telegra.ph/file/b3b8a4ba4a9d54ac9275c.jpg",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Nao"
+         "Roger"
       ],   
-   "repository": "https://github.com/Skyzu/NaoRobot.git",
+   "repository": "https://github.com/Xbaroxx/Contohbot.git",
    "addons": [
       {
          "options": {
