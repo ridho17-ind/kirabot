@@ -17,7 +17,7 @@ from NaoRobot import telethn
 from PIL import Image, ImageDraw, ImageFont
 
 
-LOGO_LINKS            = ["https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
+LOGO_LINKS            = ["https://telegra.ph/file/b3b8a4ba4a9d54ac9275c.jpg",
                          "https://telegra.ph/file/c1ff2d5ec5e1b5bd1b200.jpg",
                          "https://telegra.ph/file/08c5fbe14cc4b13d1de05.jpg",
                          "https://telegra.ph/file/66614a049d74fe2a220dc.jpg",
@@ -254,7 +254,7 @@ async def lego(event):
  if event.sender_id != OWNER_ID and not quew:
   await event.reply('Please Gimmie A Text For The Logo.')
   return
- pesan = await event.reply('Logo In A Process. Please Wait.')
+ pesan = await event.reply('Creating your logo...')
  try:
     text = event.pattern_match.group(1)
     randc = random.choice(LOGO_LINKS)
@@ -276,7 +276,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
     fname = "NaoRobot.png"
     img.save(fname, "png")
-    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by @{BOT_USERNAME}")         
+    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by @RogerexRobot")         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
