@@ -20,9 +20,4 @@ A modular Telegram Python bot running on python3 with a sqlalchemy database.
 CREDITS
 ```
 ❤️ YoneRobot - noob-kittu
-❤️ MashaRobot = Dark Prince 
-❤️ DaisyX = Inuka
-❤️ TheHamkerCat = WBB
 
-Developed By KennedyProject ! 
-```
