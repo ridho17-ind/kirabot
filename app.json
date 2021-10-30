@@ -1,13 +1,13 @@
 {
-      "name": "RogerexRobot",
+      "name": "MemekRobot",
       "description": "Theme anime Telegram group management bot.",
-      "logo": "https://telegra.ph/file/b3b8a4ba4a9d54ac9275c.jpg",
+      "logo": "https://telegra.ph/file/0760209e3470380752874.jpg",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Roger"
+         "Memek"
       ],   
    "repository": "https://github.com/Xbaroxx/Contohbot.git",
    "addons": [
