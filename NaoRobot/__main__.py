@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[🌈](https://telegra.ph/file/2c8fbe1b7a26f184a247a.jpg) 'Hai there i'm' [RogerexRobot](https://t.me/RogerexRobot)
+[🌈](https://telegra.ph/file/2c8fbe1b7a26f184a247a.jpg) 'Hai there i'm' [Akira](https://t.me/Akiramanagerbot)
 ────────────────────
 Akira a powerful group management bot built to help you manage your group!
 ────────────────────
