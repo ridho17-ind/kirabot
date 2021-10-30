@@ -74,9 +74,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[☠️](https://telegra.ph/file/b3b8a4ba4a9d54ac9275c.jpg) 'Hai there i'm' [RogerexRobot](https://t.me/RogerexRobot)
+[🌈](https://telegra.ph/file/2c8fbe1b7a26f184a247a.jpg) 'Hai there i'm' [RogerexRobot](https://t.me/RogerexRobot)
 ────────────────────
-Roger a powerful group management bot built to help you manage your group!
+Akira a powerful group management bot built to help you manage your group!
 ────────────────────
 Hit the /help or tap on button to se available command on me.
 """
@@ -84,7 +84,7 @@ Hit the /help or tap on button to se available command on me.
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ Add Roger to tour group ➕️", url="t.me/RogerexRobot?startgroup=true"),
+            text="➕️ Add Akira to tour group ➕️", url="t.me/Akiramanagerbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="Nao_"),
@@ -359,10 +359,10 @@ def Nao_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support", url="t.me/RogerexSupport"
+                            text="Support", url="t.me/AkiraSupport"
                         ),
                         InlineKeyboardButton(
-                            text="Source code", url="https://github.com/Xbaroxx"
+                            text="Tonic", url="t.me/Bukan_guudlooking"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="Nao_back")],
@@ -383,7 +383,7 @@ def Nao_about_callback(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@RogerexRobot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache@AkiraRobot` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -408,7 +408,7 @@ def Nao_about_callback(update, context):
     elif query.data == "Nao_admin":
         query.message.edit_text(
             text=f"*Let's make your group bit effective now*"
-            f"\nCongragulations, ROGER now ready to manage your group."
+            f"\nCongragulations, AKIRA now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\nBasic Admin tools help you to protect and powerup your group."
             f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -441,12 +441,12 @@ def Nao_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Log's", url="t.me/joinlogsk"),
-                    InlineKeyboardButton(text="Fed's", url="t.me/RogerexSupport"),
+                    InlineKeyboardButton(text="Log's", url="t.me/akiralogs"),
+                    InlineKeyboardButton(text="Fed's", url="t.me/AkiraSupport"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/RogerexSupport"),
-                    InlineKeyboardButton(text="Update", url="https://t.me/RogerUpdate"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/AkiraSupportChannel"),
+                    InlineKeyboardButton(text="Update", url="https://t.me/AkiraSupport"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="Nao_basichelp"),
@@ -457,17 +457,17 @@ def Nao_about_callback(update, context):
         )
     elif query.data == "Nao_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR ROGER DEV'S</b>\n"
+            text=f"<b> CREDIT FOR AKIRA 🌈 DEV'S</b>\n"
             f"\nHere Some Developers Helping in Making The Roger Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="ㄨ•日人尺口ㄨ", url="t.me/Xbarok"
+                            text="ㄨ•Barox", url="t.me/Xbarok"
                         ),
                         InlineKeyboardButton(
-                            text="之王ㄧㄇ之口", url="t.me/tdrki_1"
+                            text="Tonic", url="t.me/Bukan_guudlooking"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="Nao_back")],
@@ -481,8 +481,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. there I'm *Roger*
-                 \nHere is the [Source Code](https://github.com/Xbaroxx) .""",
+            text=""" Hi.. there I'm *Akira*
+                 \nHere is the [Source Code](https://github.com/Tonic990) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
