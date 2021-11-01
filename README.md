@@ -1,4 +1,4 @@
-<h1>Memek Robot</h1>
+<h1>Akira Robot</h1>
 <p align="center">
     <a href="https://github.com/Xbaroxx/Memekbo/stargazers"><img src="https://img.shields.io/github/stars/Xbaroxx/Memekbo?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
@@ -13,7 +13,7 @@ A modular Telegram Python bot running on python3 with a sqlalchemy database.
 *** Deploy To Heroku 📡</h4>
 
 <p align="left">
-  <a href="https://heroku.com/deploy?template=https://github.com/Xbaroxx/Memekbo">
+  <a href="https://heroku.com/deploy?template=https://github.com/Tonic990/kirabot">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 
