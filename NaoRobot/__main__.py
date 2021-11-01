@@ -352,7 +352,7 @@ def Nao_about_callback(update, context):
     if query.data == "Nao_":
         query.message.edit_text(
             text=""" ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ
-            \nHere's the basic help regarding use of Roger.
+            \nHere's the basic help regarding use of Akira.
             
             \nAlmost all modules usage defined in the help menu, checkout by sending `/help`
             \nReport error/bugs click the Button""",
@@ -438,7 +438,7 @@ def Nao_about_callback(update, context):
         )
     elif query.data == "Nao_support":
         query.message.edit_text(
-            text="* Roger support chats*"
+            text="* Akira support chats*"
             "\nJoin Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -461,7 +461,7 @@ def Nao_about_callback(update, context):
     elif query.data == "Nao_credit":
         query.message.edit_text(
             text=f"<b> CREDIT FOR AKIRA 🌈 DEV'S</b>\n"
-            f"\nHere Some Developers Helping in Making The Roger Bot",
+            f"\nHere Some Developers Helping in Making The Akira Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
