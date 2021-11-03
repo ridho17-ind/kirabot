@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[🌈](https://telegra.ph/file/2c8fbe1b7a26f184a247a.jpg) 'Hai there i'm' [Flicks](https://t.me/FlicksMusicBot)
+[👩‍💻](https://telegra.ph/file/e1ff8620519d6378ac1f0.jpg) 'Hai there i'm' [Flicks](https://t.me/FlicksMusicBot)
 ────────────────────
 Flicks a powerful group management bot built to help you manage your group!
 ────────────────────
@@ -84,7 +84,7 @@ Hit the /help or tap on button to se available command on me.
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ Add Flicks To Your Group ➕️", url="t.me/FlicksMusicBot?startgroup=true"),
+            text="Add Flicks To Your Group", url="t.me/FlicksMusicBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="Nao_"),
@@ -93,7 +93,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="Help & Commands❔", callback_data="help_back"),
+        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
     ],
 ]
 
