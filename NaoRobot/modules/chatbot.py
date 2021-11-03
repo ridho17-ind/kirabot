@@ -64,9 +64,9 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Akira AI Was Not Activated In This Chat")
+            await lel.edit("Flicks AI Was Not Activated In This Chat")
             return
-        await lel.edit(f"Akira AI Successfully Deactivated For Users In The Chat {message.chat.id}")
+        await lel.edit(f"Flicks AI Successfully Deactivated For Users In The Chat {message.chat.id}")
 
     elif status == "EN" or status == "en" or status == "english":
         if not chat_id in en_chats:
@@ -105,8 +105,8 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("akira", "Aco")
-        test = test.replace("Akira", "Aco")
+        test = test.replace("flicks", "Aco")
+        test = test.replace("Flicks", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
@@ -162,15 +162,15 @@ async def hmm(client, message):
             except:
                 return
 
-        test = test.replace("Akira", "Aco")
-        test = test.replace("Akira", "Aco")
+        test = test.replace("Flicks", "Aco")
+        test = test.replace("Flicks", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Akira")
-        response = response.replace("aco", "Akira")
-        response = response.replace("Luna", "Akira")
-        response = response.replace("luna", "Akira")
+        response = response.replace("Aco", "Flicks")
+        response = response.replace("aco", "Flicks")
+        response = response.replace("Luna", "Flicks")
+        response = response.replace("luna", "Flicks")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -230,12 +230,12 @@ async def inuka(client, message):
         except:
             return
 
-    test = test.replace("Akira", "Aco")
-    test = test.replace("Akira", "Aco")
+    test = test.replace("Flicks", "Aco")
+    test = test.replace("Flicks", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Akira")
-    response = response.replace("aco", "Akira")
+    response = response.replace("Aco", "Flicks")
+    response = response.replace("aco", "Flicks")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -249,7 +249,7 @@ async def inuka(client, message):
 
 
 @pbot.on_message(
-    filters.regex("Akira|akira|tonic|tonic|AKIRA")
+    filters.regex("Flicks|flicks|skyzo|skyzo|FLICKS")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -301,11 +301,11 @@ async def inuka(client, message):
         except:
             return
 
-    test = test.replace("Akira", "Aco")
-    test = test.replace("Akira", "Aco")
+    test = test.replace("Flicks", "Aco")
+    test = test.replace("Flicks", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Akira")
-    response = response.replace("aco", "Akira")
+    response = response.replace("Aco", "Flicks")
+    response = response.replace("aco", "Flicks")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -323,7 +323,7 @@ async def inuka(client, message):
 
 __help__ = """
 *──「 Help for the Chatbot module 」──*
-✪ Roger AI is the only ai system which can detect & reply upto 200 language's
+✪ Flicks AI is the only ai system which can detect & reply upto 200 language's
 ✪ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
 ✪ /chatbot EN : Enables English only chatbot.
 """
