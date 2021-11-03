@@ -84,7 +84,7 @@ Hit the /help or tap on button to se available command on me.
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ Add Akira to tour group ➕️", url="t.me/Akiramanagerbot?startgroup=true"),
+            text="➕️ Add Flicks T Your Group ➕️", url="t.me/FlicksMusicBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="Nao_"),
@@ -352,7 +352,7 @@ def Nao_about_callback(update, context):
     if query.data == "Nao_":
         query.message.edit_text(
             text=""" ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ
-            \nHere's the basic help regarding use of Akira.
+            \nHere's the basic help regarding use of Flicks.
             
             \nAlmost all modules usage defined in the help menu, checkout by sending `/help`
             \nReport error/bugs click the Button""",
@@ -362,10 +362,10 @@ def Nao_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support", url="t.me/AkiraSupport"
+                            text="Support", url="t.me/FlicksSupport"
                         ),
                         InlineKeyboardButton(
-                            text="Tonic", url="t.me/Bukan_guudlooking"
+                            text="Skyzo", url="t.me/xflskyzo"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="Nao_back")],
@@ -411,7 +411,7 @@ def Nao_about_callback(update, context):
     elif query.data == "Nao_admin":
         query.message.edit_text(
             text=f"*Let's make your group bit effective now*"
-            f"\nCongragulations, AKIRA now ready to manage your group."
+            f"\nCongragulations, Flicks now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\nBasic Admin tools help you to protect and powerup your group."
             f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -460,17 +460,17 @@ def Nao_about_callback(update, context):
         )
     elif query.data == "Nao_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR AKIRA 🌈 DEV'S</b>\n"
+            text=f"<b> CREDIT FOR FLICKS DEV'S</b>\n"
             f"\nHere Some Developers Helping in Making The Akira Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="ㄨ•Barox", url="t.me/Xbarok"
+                            text="Skyzo", url="t.me/Xbarok"
                         ),
                         InlineKeyboardButton(
-                            text="Tonic", url="t.me/Bukan_guudlooking"
+                            text="Not", url="t.me/Bukan_guudlooking"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="Nao_back")],
@@ -484,8 +484,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. there I'm *Akira*
-                 \nHere is the [Source Code](https://github.com/Tonic990) .""",
+            text=""" Hi.. there I'm *Flicks*
+                 \nHere is the [Source Code](https://github.com/ridho17-ind) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
