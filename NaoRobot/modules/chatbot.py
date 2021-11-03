@@ -58,7 +58,7 @@ async def hmm(_, message):
         if not lol:
             await lel.edit("Akira AI Already Activated In This Chat")
             return
-        await lel.edit(f"Akira AI Successfully Added For Users In The Chat {message.chat.id}")
+        await lel.edit(f"Flicks AI Successfully Added For Users In The Chat {message.chat.id}")
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
