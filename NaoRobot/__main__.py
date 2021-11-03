@@ -444,12 +444,12 @@ def Nao_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Log's", url="t.me/akiralogs"),
-                    InlineKeyboardButton(text="Fed's", url="t.me/AkiraSupport"),
+                    InlineKeyboardButton(text="Log's", url="t.me/jdididndndjsj"),
+                    InlineKeyboardButton(text="Fed's", url="t.me/FlicksSupport"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/AkiraSupportChannel"),
-                    InlineKeyboardButton(text="Update", url="https://t.me/AkiraSupport"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/FlicksSupport"),
+                    InlineKeyboardButton(text="Update", url="https://t.me/SadRoomsInfo"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="Nao_basichelp"),
