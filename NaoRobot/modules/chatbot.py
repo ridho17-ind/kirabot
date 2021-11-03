@@ -56,7 +56,7 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Akira AI Already Activated In This Chat")
+            await lel.edit("Flicks AI Already Activated In This Chat")
             return
         await lel.edit(f"Flicks AI Successfully Added For Users In The Chat {message.chat.id}")
 
@@ -110,8 +110,8 @@ async def hmm(client, message):
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Akira")
-        response = response.replace("aco", "Akira")
+        response = response.replace("Aco", "Flicks")
+        response = response.replace("aco", "Flicks")
 
         pro = response
         try:
