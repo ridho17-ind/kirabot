@@ -74,11 +74,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[👩‍💻](https://telegra.ph/file/804a3b9b9335ad6d82026.jpg) **Hai there i'm [Flicks](https://t.me/FlicksMusicBot)**
+[🌈](https://telegra.ph/file/2c8fbe1b7a26f184a247a.jpg) 'Hai there i'm' [Flicks](https://t.me/FlicksMusicBot)
 ────────────────────
-**Flicks a powerful group management bot built to help you manage your group!**
+Flicks a powerful group management bot built to help you manage your group!
 ────────────────────
-**Hit the /help or tap on button to se available command on me.**
+Hit the /help or tap on button to se available command on me.
 """
 
 buttons = [
@@ -93,7 +93,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="Help & Commands❔", callback_data="help_back"),
     ],
 ]
 
@@ -386,7 +386,7 @@ def Nao_about_callback(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@AkiraRobot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -448,8 +448,8 @@ def Nao_about_callback(update, context):
                     InlineKeyboardButton(text="Fed's", url="t.me/FlicksSupport"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", url="https://t.me/FlicksSupport"),
-                    InlineKeyboardButton(text="Update", url="https://t.me/SadRoomsInfo"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/SadRoomsInfo"),
+                    InlineKeyboardButton(text="Update", url="https://t.me/FlicksSupport"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="Nao_basichelp"),
@@ -461,19 +461,18 @@ def Nao_about_callback(update, context):
     elif query.data == "Nao_credit":
         query.message.edit_text(
             text=f"<b> CREDIT FOR FLICKS DEV'S</b>\n"
-            f"\nHere Some Developers Helping in Making The Akira Bot",
+            f"\nHere Some Developers Helping in Making The Flicks Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(
-                            text="Skyzo", url="t.me/Xbarok"
-                        ),
-                        InlineKeyboardButton(
-                            text="Tonic", url="t.me/Bukan_guudlooking"
-                        ),
+                        InlineKeyboardButton(text="x-ʙᴀʀᴏx", url="t.me/Xbarok"),
+                        InlineKeyboardButton(text="『TØNIC』", url="t.me/Bukan_guudlooking"),
+                    ],[
+                        InlineKeyboardButton(text="Skyzo", url="t.me/xflskyzo"),
+                    ],[
+                        InlineKeyboardButton(text="Back", callback_data="Nao_back")
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="Nao_back")],
                 ]
             ),
         )
