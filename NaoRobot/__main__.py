@@ -74,11 +74,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-[🌈](https://telegra.ph/file/2c8fbe1b7a26f184a247a.jpg) 'Hai there i'm' [Flicks](https://t.me/FlicksMusicBot)
+[👩‍💻](https://telegra.ph/file/804a3b9b9335ad6d82026.jpg) **Hai there i'm [Flicks](https://t.me/FlicksMusicBot)**
 ────────────────────
-Flicks a powerful group management bot built to help you manage your group!
+**Flicks a powerful group management bot built to help you manage your group!**
 ────────────────────
-Hit the /help or tap on button to se available command on me.
+**Hit the /help or tap on button to se available command on me.**
 """
 
 buttons = [
@@ -93,7 +93,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="Help & Commands❔", callback_data="help_back"),
+        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
     ],
 ]
 
@@ -438,7 +438,7 @@ def Nao_about_callback(update, context):
         )
     elif query.data == "Nao_support":
         query.message.edit_text(
-            text="* Akira support chats*"
+            text="* Flicks support chats*"
             "\nJoin Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -470,7 +470,7 @@ def Nao_about_callback(update, context):
                             text="Skyzo", url="t.me/Xbarok"
                         ),
                         InlineKeyboardButton(
-                            text="Not", url="t.me/Bukan_guudlooking"
+                            text="Tonic", url="t.me/Bukan_guudlooking"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="Nao_back")],
