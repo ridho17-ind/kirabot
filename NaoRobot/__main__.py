@@ -466,10 +466,10 @@ def Nao_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="x-ʙᴀʀᴏx", url="t.me/Xbarok"),
-                        InlineKeyboardButton(text="『TØNIC』", url="t.me/Bukan_guudlooking"),
+                        InlineKeyboardButton(text="ʙᴀʀᴏx​", url="t.me/Xbarok"),
+                        InlineKeyboardButton(text="ᴛᴏɴɪᴄ​", url="t.me/Bukan_guudlooking"),
                     ],[
-                        InlineKeyboardButton(text="Skyzo", url="t.me/xflskyzo"),
+                        InlineKeyboardButton(text="sᴋʏᴢᴏ​", url="t.me/xflskyzo"),
                     ],[
                         InlineKeyboardButton(text="Back", callback_data="Nao_back")
                     ],
@@ -483,7 +483,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi.. there I'm *Flicks*
+            text=""" Hi.. There I'm *Flicks*
                  \nHere is the [Source Code](https://github.com/ridho17-ind) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
